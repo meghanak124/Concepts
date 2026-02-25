@@ -1,0 +1,54 @@
+WHERE Clause (Core Concept)
+Explain:
+WHERE filters rows
+Used with SELECT, UPDATE, DELETE
+Example:
+SELECT * FROM students
+WHERE name = 'Meghana';
+
+Comparison Operators
+Include a clean table in PPT:
+Operator	Meaning
+=	Equal to
+>	Greater than
+<	Less than
+>=	Greater or equal
+<=	Less or equal
+<> or !=	Not equal
+Example:
+SELECT * FROM products
+WHERE price >= 1000;
+
+Logical Operators
+Very important.
+AND
+OR
+NOT
+Example:
+SELECT * FROM students
+WHERE marks > 70 AND city = 'Bangalore';
+Explain execution logic visually.
+
+Special Filtering Operators
+You MUST include these.
+🔹 IN
+SELECT * FROM students
+WHERE city IN ('Delhi', 'Mumbai');
+🔹 BETWEEN
+SELECT * FROM students
+WHERE marks BETWEEN 60 AND 80;
+🔹 LIKE (Pattern Matching)
+SELECT * FROM students
+WHERE name LIKE 'M%';
+Explain:
+% → multiple characters
+_ → single character
+
+NULL Filtering (Very Important)
+Students often forget this.
+Explain:
+SELECT * FROM students
+WHERE marks IS NULL;
+NOT:
+marks = NULL ❌
+This shows deeper understanding.
